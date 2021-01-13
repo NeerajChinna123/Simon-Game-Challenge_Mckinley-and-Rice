@@ -44,6 +44,7 @@ function checkAnswer(currentLevel){
 
 }
     else{
+      playSound("wrong");
       $('body').addClass('game-over');
       setTimeout(function(){
         $('body').removeClass('game-over');
